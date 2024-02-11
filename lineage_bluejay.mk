@@ -7,6 +7,9 @@
 # Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_PIXEL_BOOT_ANIMATION_RES := 1080
+TARGET_IS_PIXEL := true
+TARGET_IS_PIXEL_6 := true
 
 # Matrixx
 MATRIXX_BUILD_TYPE := Official
