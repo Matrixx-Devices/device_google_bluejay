@@ -7,9 +7,6 @@
 # Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_PIXEL_BOOT_ANIMATION_RES := 1080
-TARGET_IS_PIXEL := true
-TARGET_IS_PIXEL_6 := true
 
 # Matrixx
 MATRIXX_BUILD_TYPE := Official
@@ -17,11 +14,16 @@ MATRIXX_MAINTAINER := EinarG.
 MATRIXX_CHIPSET := GS101
 MATRIXX_BATTERY := 4410mah
 MATRIXX_DISPLAY := 1080x2400
-TARGET_HAS_UDFPS := true
 
-# Gapps
+# Matrixx Flags
 WITH_GMS := true
-TARGET_GAPPS_ARCH := arm64
+TARGET_HAS_UDFPS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_INCLUDE_PIXEL_FRAMEWORK := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_PIXEL_BOOT_ANIMATION_RES := 1080
+TARGET_IS_PIXEL := true
+TARGET_IS_PIXEL_6 := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/bluejay/aosp_bluejay.mk)
