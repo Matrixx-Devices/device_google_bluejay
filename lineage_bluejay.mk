@@ -24,6 +24,8 @@ TARGET_EXCLUDES_AUDIOFX := true
 TARGET_PIXEL_BOOT_ANIMATION_RES := 1080
 TARGET_IS_PIXEL := true
 TARGET_IS_PIXEL_6 := true
+TARGET_EXCLUDES_AUXIO := true
+TARGET_EXCLUDES_VIA := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/bluejay/aosp_bluejay.mk)
